@@ -32,7 +32,7 @@ float lastSendTime = 0;
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-	ofSetFrameRate(50);
+	ofSetFrameRate(100);
 	ofSetWindowShape(IMAGE_WIDTH+panelWidth, IMAGE_HEIGHT);
 
 	kinect.open();
