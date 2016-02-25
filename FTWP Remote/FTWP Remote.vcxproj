@@ -49,19 +49,19 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="../../../../../../../Softwares/openFrameworks 0.9.2/libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+    <Import Project="$(OF_ROOT)/libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="../../../../../../../Softwares/openFrameworks 0.9.2/libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+    <Import Project="$(OF_ROOT)/libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="../../../../../../../Softwares/openFrameworks 0.9.2/libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+    <Import Project="$(OF_ROOT)/libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="../../../../../../../Softwares/openFrameworks 0.9.2/libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+    <Import Project="$(OF_ROOT)/libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -95,7 +95,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src;$(SPOUTSDK)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;$(OF_ROOT)\addons\ofxGui\src;$(OF_ROOT)\addons\ofxOsc\libs;$(OF_ROOT)\addons\ofxOsc\libs\oscpack;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\posix;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc;$(OF_ROOT)\addons\ofxOsc\src;$(SPOUTSDK)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -114,7 +114,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;$(OF_ROOT)\addons\ofxGui\src;$(OF_ROOT)\addons\ofxOsc\libs;$(OF_ROOT)\addons\ofxOsc\libs\oscpack;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\posix;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc;$(OF_ROOT)\addons\ofxOsc\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -133,7 +133,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;$(OF_ROOT)\addons\ofxGui\src;$(OF_ROOT)\addons\ofxOsc\libs;$(OF_ROOT)\addons\ofxOsc\libs\oscpack;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\posix;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc;$(OF_ROOT)\addons\ofxOsc\src;$(SPOUTSDK)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -155,7 +155,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;$(OF_ROOT)\addons\ofxGui\src;$(OF_ROOT)\addons\ofxOsc\libs;$(OF_ROOT)\addons\ofxOsc\libs\oscpack;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\posix;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32;$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc;$(OF_ROOT)\addons\ofxOsc\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -182,58 +182,58 @@
     <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\SpoutSDK\SpoutSharedMemory.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxBaseGui.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxButton.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxGuiGroup.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxLabel.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxPanel.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxSlider.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxSliderGroup.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxToggle.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscBundle.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscMessage.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscReceiver.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscSender.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxBaseGui.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxButton.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxGuiGroup.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxLabel.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxPanel.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxSlider.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxSliderGroup.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxGui\src\ofxToggle.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscBundle.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscMessage.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscReceiver.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscSender.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxBaseGui.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxButton.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxGui.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxGuiGroup.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxLabel.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxPanel.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxSlider.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxSliderGroup.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxGui\src\ofxToggle.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOsc.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscArg.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscBundle.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscMessage.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscParameterSync.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscReceiver.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\src\ofxOscSender.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscException.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h" />
-    <ClInclude Include="..\..\..\..\..\..\..\Softwares\openFrameworks 0.9.2\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxBaseGui.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxButton.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxGui.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxGuiGroup.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxLabel.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxPanel.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxSlider.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxSliderGroup.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxGui\src\ofxToggle.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOsc.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscArg.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscBundle.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscMessage.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscParameterSync.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscReceiver.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscSender.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscException.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h" />
+    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
